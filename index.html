@@ -9,10 +9,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-type(135deg, #1a73e8, #00d2ff);
             background: linear-gradient(135deg, #1a73e8, #00d2ff);
             color: #333;
             min-height: 100vh;
@@ -67,6 +67,26 @@
             text-align: center;
             width: 100%;
         }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .nav-buttons a {
+            background: #f1f3f4;
+            color: #1a73e8;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-buttons a:hover {
+            background: #1a73e8;
+            color: white;
+        }
         .section-title {
             font-size: 16px;
             font-weight: bold;
@@ -101,7 +121,7 @@
         }
         .socials a {
             display: inline-block;
-            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            background: linear-gradient(135deg, #e1306c, #833ab4);
             color: white;
             padding: 10px 20px;
             border-radius: 8px;
@@ -109,11 +129,11 @@
             font-size: 14px;
             font-weight: bold;
             transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+            box-shadow: 0 4px 12px rgba(225, 48, 108, 0.3);
         }
         .socials a:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(26, 115, 232, 0.4);
+            box-shadow: 0 6px 15px rgba(225, 48, 108, 0.4);
         }
     </style>
 </head>
@@ -123,8 +143,14 @@
         
         <h1>Muhammad Azriel Khoirurrozaq</h1>
         <div class="prodi">Manajemen Informasi Komunikasi - STMM</div>
+
+        <!-- Tombol Navigasi Cepat -->
+        <div class="nav-buttons">
+            <a href="#tentang">Tentang Saya</a>
+            <a href="#riwayat">Riwayat & Pengalaman</a>
+        </div>
         
-        <div class="section-title">👤 Tentang Saya</div>
+        <div id="tentang" class="section-title">👤 Tentang Saya</div>
         <div class="desc">
             Lahir di Wonosobo, 10 November 2006. Memiliki postur tinggi badan 177 cm dan berat badan 62 kg. Saya adalah seseorang yang sangat menggemari sepak bola internasional, terutama pendukung setianya <strong>Real Madrid</strong>. Hari-hari saya sering ditemani alunan musik yang diputar sesuai *mood*. 
             <br><br>
@@ -138,7 +164,7 @@
             <li>Eksplorasi dunia digital, media, dan sistem informasi.</li>
         </ul>
 
-        <div class="section-title">📜 Riwayat & Pengalaman</div>
+        <div id="riwayat" class="section-title">📜 Riwayat & Pengalaman</div>
         <ul>
             <li><strong>Pendidikan:</strong> Lulusan SMAN 1 Wonosobo.</li>
             <li><strong>Organisasi:</strong> Pernah aktif mengikuti kepanitiaan acara <em>Classic</em> yang diadakan oleh OSIS SMAN 1 Wonosobo.</li>
@@ -147,7 +173,7 @@
 
         <div class="section-title">📬 Kontak & Media Sosial</div>
         <div class="socials">
-            <a href="https://github.com/azriel219" target="_blank">Kunjungi Profil GitHub Saya</a>
+            <a href="https://instagram.com/Azrielllllkh_" target="_blank">Instagram: @Azrielllllkh_</a>
         </div>
     </div>
 </body>
